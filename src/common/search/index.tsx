@@ -21,7 +21,7 @@ export const Search = () => {
   const searchLocation = async () => {
     const data = await axios
       .get(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${location}&appid=${apiKey}`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${location}&appid=${apiKey}`
       )
       .then((response) => ({
         lat: response.data[0].lat,
