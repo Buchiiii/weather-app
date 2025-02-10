@@ -10,7 +10,6 @@ export const Search = () => {
   const [location, setLocation] = useState("");
   const dispatch = useDispatch();
   const tempType = useSelector((state: RootState) => state.temp.type);
-  const unit = tempType === "celcius" ? "metric" : "imperial";
   var apiKey = import.meta.env.VITE_WEATHER_API_KEY;
 
   const toggleUnit = () => {

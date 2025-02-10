@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 // Define a type for the slice state
 interface WeatherState {
-  data: {} | null;
+  data: { [key: string]: any } | null;
 }
 
 // Define the initial state using that type
